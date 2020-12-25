@@ -4,10 +4,10 @@
 
 apply plugin: 'java' // 1. Apply the Java plugin to the project
 
-sourceSets {
-    main {
-        java {
-            srcDir 'java' // 3. Add 'java' directory as a source directory
+sourceSets { //A SourceSet represents a logical group of Java source and resource files
+    main { //Configuring the main sourceSet
+        java { //The java source which is to be compiled
+            srcDir 'java' // The source directories containing the Java source files
         }
     }
 }
