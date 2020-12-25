@@ -12,8 +12,8 @@ sourceSets {
     }
 }
 
-jar {
-    manifest {
-        attributes 'Implementation-Version': '1.0' // 2. Add manifest attribute
+jar { //this is a configuration block
+    manifest { //manifest is a method which takes in a configuration block
+        attributes 'Implementation-Version': '1.0' // The method attributes takes in a map i.e. key value pair
     }
 }
